@@ -17,7 +17,7 @@ const upload = multer({ storage: storage });
 app.use(require('express').static('public'));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
-process.loadEnvFile('.env');
+//process.loadEnvFile('.env');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views/'));
 
